@@ -1,0 +1,50 @@
+{
+  "name": "moleculer-crabe",
+  "version": "0.0.1",
+  "description": "My Moleculer project",
+  "scripts": {
+    "dev": "moleculer-runner --repl --hot services",
+    "start": "moleculer-runner services",
+    "broker-prod": "node broker.js",
+    "broker-dev": "nodemon broker.js",
+    "ci": "jest --watch",
+    "test": "jest --coverage",
+    "lint": "eslint services"
+  },
+  "keywords": [
+    "microservices",
+    "moleculer"
+  ],
+  "author": "",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "jest": "^22.0.4",
+    "jest-cli": "^22.0.4",
+    "moleculer-repl": "^0.3.0"
+  },
+  "dependencies": {
+    "editorconfig": "^0.15.0",
+    "ioredis": "^3.1.0",
+    "jsonschema": "^1.2.2",
+    "moleculer": "^0.11.0",
+    "moleculer-db": "^0.7.0",
+    "moleculer-db-adapter-sequelize": "^0.1.5",
+    "moleculer-web": "^0.6.0",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "pine": "^1.1.1",
+    "pino": "^4.10.3",
+    "raven": "^2.3.0",
+    "sequelize": "^4.31.2"
+  },
+  "engines": {
+    "node": ">= 6.x.x"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "rootDir": "./services",
+    "roots": [
+      "../test"
+    ]
+  }
+}
